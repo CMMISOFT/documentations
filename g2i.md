@@ -1,63 +1,21 @@
-# iSoft Apps Website
-Company introduction website, portfolio website
+# G2i - Self Checkout Kiosk
 
-<strong>source:</strong> https://github.com/ss-kenghong/isoft-web
+UI/UX Design in Figma
 
-## Environment
-<!-- ```
-.
-└── [server]
-    └── index.js
-└── [client]
-    ├── [src] - Development
-    ├── [dist] - Staging
-    └── [build] - Live
-```         -->
-- [server]
-  - [index.js]
-- [client]
-  - [src] - Development
-  - [dist] - Staging
-  - [build] - Live
+| Source | Link |
+| --- | --- |
+| <code>Working File</code> | https://www.figma.com/file/NGV2CG7W4bSbQ9wiA5haMX/SS-Kiosk---v02?node-id=0%3A1 |
+| <code>Preview</code> | https://www.figma.com/proto/NGV2CG7W4bSbQ9wiA5haMX/SS-Kiosk---v02?page-id=0%3A1&node-id=581%3A785&viewport=752%2C-83%2C0.03&scaling=scale-down&starting-point-node-id=581%3A785&show-proto-sidebar=1 |
+| <code>Flow Chart</code> | https://www.figma.com/file/L5eBbMHq7zLXA6cFmccjF7/G2i---Self-checkout-Flow-Chart?node-id=0%3A1 |
 
-## Server Side
+## Guide
 
-Installation:
+Please take note of below elements when revising or creating new screen
 
-```bash
-cd <project-root>/server
-npm install
-```
+- Button style in Claymorphism
+- Overlay style
+- Cart listing style
 
-Run:
+## Animation & Illustration
 
-```bash
-npm start
-```
-
-## Cient Side
-
-It is recommended to install `gulp-cli` globally, which helps initializing and previewing the website locally.
-
-Installation:
-
-```bash
-cd <project-root>/client
-npm install
-npm install --global gulp-cli
-```
-
-<br />Development run: `gulp`
-
-- to start serving the files in src directory.
-
-<br />Staging run: `gulp dist`
-
-- to build everything in dist directory.
-
-<br />Production run: `gulp build`
-
-- to build everything in build directory (with versioning).
-
-  \*Build version will increase when run this command
-  `client/src/assets/version/version.js`
+LottieFiles  https://lottiefiles.com/

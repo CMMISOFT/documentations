@@ -5,7 +5,7 @@ Company introduction website, portfolio website
 | --- | --- |
 | <code>GitHub</code> | https://github.com/ss-kenghong/isoft-web |
 | <code>Staging Preview</code> | https://isoft-web.netlify.app/ |
-| <code>Live</code> | https://isoft.sg/ |
+| <code>Live</code> | isoft.sg |
 
 ## Environment
 <!-- ```
