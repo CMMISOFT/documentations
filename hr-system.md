@@ -1,63 +1,7 @@
-# iSoft Apps Website
-Company introduction website, portfolio website
+# Human Resource System
+UI/UX Design in Adobe XD
 
-<strong>source:</strong> https://github.com/ss-kenghong/isoft-web
-
-## Environment
-<!-- ```
-.
-└── [server]
-    └── index.js
-└── [client]
-    ├── [src] - Development
-    ├── [dist] - Staging
-    └── [build] - Live
-```         -->
-- [server]
-  - [index.js]
-- [client]
-  - [src] - Development
-  - [dist] - Staging
-  - [build] - Live
-
-## Server Side
-
-Installation:
-
-```bash
-cd <project-root>/server
-npm install
-```
-
-Run:
-
-```bash
-npm start
-```
-
-## Cient Side
-
-It is recommended to install `gulp-cli` globally, which helps initializing and previewing the website locally.
-
-Installation:
-
-```bash
-cd <project-root>/client
-npm install
-npm install --global gulp-cli
-```
-
-<br />Development run: `gulp`
-
-- to start serving the files in src directory.
-
-<br />Staging run: `gulp dist`
-
-- to build everything in dist directory.
-
-<br />Production run: `gulp build`
-
-- to build everything in build directory (with versioning).
-
-  \*Build version will increase when run this command
-  `client/src/assets/version/version.js`
+| Source | Link |
+| --- | --- |
+| <code>Working File</code> | https://github.com/ss-kenghong/isoft-web |
+| <code>Preview</code> | https://xd.adobe.com/view/9ad0fd45-62d9-4cb3-b1a6-2a07b35e7f38-cf83/ |
