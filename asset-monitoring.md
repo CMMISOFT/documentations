@@ -1,35 +1,21 @@
-# iSoft Apps Website
-Company introduction website, portfolio website
+# Asset Monitoring System
 
-<strong>source:</strong> https://github.com/ss-kenghong/isoft-web
-<strong>staging preview:</strong> https://isoft-web.netlify.app/
-<strong>live:</strong> https://isoft.sg/
+Asset monitoring website
 
-## Environment
+| Source                     | Link                                               |
+| -------------------------- | -------------------------------------------------- |
+| <code>Working Files</code> | https://github.com/ss-kenghong/iot-temperature-v03 |
+| <code>Preview</code>       | https://ss-iot-v03.netlify.app/                    |
+| <code>Live</code>       | https://app.shengsiong.com.sg:9002/                |
 
-- [server]
-  - [index.js]
-- [client]
-  - [src] - Development
-  - [dist] - Staging
-  - [build] - Live
+## Technical Stack
 
-## Server Side
+- Javascript
+- C#
+- Design System: <a href="https://semantic-ui.com/" target="_blank">`Semantic UI`</a>
+- Animated 3D Background: <a href="https://www.vantajs.com/" target="_blank">`Vanta JS`</a>
 
-Installation:
-
-```bash
-cd <project-root>/server
-npm install
-```
-
-Run:
-
-```bash
-npm start
-```
-
-## Cient Side
+## Guide
 
 It is recommended to install `gulp-cli` globally, which helps initializing and previewing the website locally.
 
@@ -45,13 +31,6 @@ npm install --global gulp-cli
 
 - to start serving the files in src directory.
 
-<br />Staging run: `gulp dist`
-
-- to build everything in dist directory.
-
 <br />Production run: `gulp build`
 
-- to build everything in build directory (with versioning).
-
-  \*Build version will increase when run this command
-  `client/src/assets/version/version.js`
+- to build everything in build directory.

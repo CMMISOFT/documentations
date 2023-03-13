@@ -7,102 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-
-  <link rel="stylesheet" type="text/css" href="semantic.min.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 
 <body class="overflow-hidden">
   <div id="app"></div>
 
-  <style>
-    .form-wrapper {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #ffffff;
-      transition: all 2s dase-out;
-      /* background: url(https://images.pexels.com/photos/1174138/pexels-photo-1174138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center; */
-    }
-
-    .form-wrapper.d-none {
-      display: none;
-    }
-
-    .form-container {
-      /* background-color: #ffffff; */
-      background: rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(20px);
-      padding: 30px 40px 40px;
-      border-radius: 8px;
-      position: relative;
-    }
-
-    .form-label {
-      font-size: 20px;
-      padding-bottom: 8px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .form-btn {
-      display: flex !important;
-      margin: auto !important;
-    }
-
-    .form-error {
-      font-size: 14px;
-      color: #db0011;
-      display: none;
-      text-align: center;
-      justify-content: center;
-      padding-top: 8px;
-
-      position: absolute;
-      bottom: -30px;
-      width: 100%;
-    }
-
-    .form-error.show {
-      display: flex;
-    }
-
-    .form-content {}
-
-    .overflow-hidden {
-      overflow: hidden;
-    }
-  </style>
-
-  <div class="form-wrapper gradient" id="mainForm">
-    <div class="form-container">
-      <form class="ui form form-content">
-        <div class="field">
-          <div class="form-label">Enter Password</div>
-          <input type="password" id="pswd" placeholder="">
-        </div>
-        <button class="ui button form-btn" id="checkPswd">Submit</button>
-        <div class="form-error" id="pswdError"></div>
-      </form>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-    if (getCookie("acceptPassword")) {
-      $("body").removeClass("overflow-hidden");
-      $("#mainForm").addClass("d-none");
-    }
-
+  <script>
     window.$docsify = {
       name: 'SS Documentation',
       repo: '',
@@ -121,134 +32,14 @@
         },
       }
     }
-
-    function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(";");
-      for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) === " ") {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) === 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-
-    function setCookie(cname, cvalue, exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-      var expires = "expires=" + d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-
-    var checkPswd = document.getElementById("checkPswd");
-
-    checkPswd.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      var confirmPassword = "admin";
-      var password = document.getElementById("pswd").value;
-
-      if (password == confirmPassword) {
-        setCookie("acceptPassword", true, 3);
-        $("#mainForm").addClass("d-none");
-        $("body").removeClass("overflow-hidden");
-      }
-      else {
-        $("#pswdError").html("Incorrect Password");
-        $("#pswdError").addClass("show");
-      }
-    });
-
-    // function checkPswd(e) {
-
-    //   var confirmPassword = "admin";
-    //   var password = document.getElementById("pswd").value;
-
-    //   // if (password == confirmPassword) {
-    //   //   setCookie("acceptPassword", true, 3);
-    //   //   $("#mainForm").addClass("d-none");
-    //   //   $("body").removeClass("overflow-hidden");
-    //   //   console.log("asdasdasdasdasdasdasdasdasd");
-    //   // }
-    //   // else {
-    //     $("#pswdError").html("Incorrect Password");
-    //     $("#pswdError").addClass("show");
-    //   // }
-    // }
-
-    //background
-    var colors = new Array(
-      [62, 35, 255],
-      [60, 255, 60],
-      [255, 35, 98],
-      [45, 175, 230],
-      [255, 0, 255],
-      [255, 128, 0]);
-
-    var step = 0;
-    //color table indices for: 
-    // current color left
-    // next color left
-    // current color right
-    // next color right
-    var colorIndices = [0, 1, 2, 3];
-
-    //transition speed
-    var gradientSpeed = 0.002;
-
-    function updateGradient() {
-
-      if ($ === undefined) return;
-
-      var c0_0 = colors[colorIndices[0]];
-      var c0_1 = colors[colorIndices[1]];
-      var c1_0 = colors[colorIndices[2]];
-      var c1_1 = colors[colorIndices[3]];
-
-      var istep = 1 - step;
-      var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-      var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-      var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-      var color1 = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
-
-      var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-      var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-      var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-      var color2 = "rgb(" + r2 + "," + g2 + "," + b2 + ")";
-
-      $('.gradient').css({
-        background: "-webkit-gradient(linear, left top, right top, from(" + color1 + "), to(" + color2 + "))"
-      }).css({
-        background: "-moz-linear-gradient(left, " + color1 + " 0%, " + color2 + " 100%)"
-      });
-
-      step += gradientSpeed;
-      if (step >= 1) {
-        step %= 1;
-        colorIndices[0] = colorIndices[1];
-        colorIndices[2] = colorIndices[3];
-
-        //pick two new target color indices
-        //do not pick the same as the current one
-        colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-        colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-      }
-    }
-
-    setInterval(updateGradient, 10);
   </script>
 
   <!-- index.html -->
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
 
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- Latest v2.x.x -->
   <script src="https://unpkg.com/docsify-copy-code@2"></script>
 </body>

@@ -1,63 +1,14 @@
-# iSoft Apps Website
-Company introduction website, portfolio website
+# $tm - Simple Teller Machine
 
-<strong>source:</strong> https://github.com/ss-kenghong/isoft-web
+UI/UX Design in Figma
 
-## Environment
-<!-- ```
-.
-└── [server]
-    └── index.js
-└── [client]
-    ├── [src] - Development
-    ├── [dist] - Staging
-    └── [build] - Live
-```         -->
-- [server]
-  - [index.js]
-- [client]
-  - [src] - Development
-  - [dist] - Staging
-  - [build] - Live
+| Source                    | Link                                                                    |
+| ------------------------- | ----------------------------------------------------------------------- |
+| <code>Working File</code> | <a href="stm/stm-ui-v03.fig.zip">stm-ui-v03.fig.zip</a> |
+| <code>GIF Working File</code> | <a href="stm/stm-collectyourcash.psd.zip">stm-collectyourcash.psd.zip</a> <br><a href="stm/stm-insertcard.psd.zip">stm-insertcard.psd.zip</a> <br><a href="stm/stm-instruction.psd.zip">stm-instruction.psd.zip</a> <br><a href="stm/stm-keypad.psd.zip">stm-keypad.psd.zip</a> <br><a href="stm/stm-removecard.psd.zip">stm-removecard.psd.zip</a> |
+| <code>Prototype</code> | https://www.figma.com/proto/J5BAXQ3KEJR9R82NR9UZA5/%24tm-ui---v03?page-id=0%3A1&node-id=32%3A2&viewport=4055%2C4458%2C0.43&scaling=scale-down&starting-point-node-id=32%3A2 <br><br>https://www.figma.com/file/J5BAXQ3KEJR9R82NR9UZA5/%24tm-ui---v03?node-id=0%3A1 |
 
-## Server Side
-
-Installation:
-
-```bash
-cd <project-root>/server
-npm install
-```
-
-Run:
-
-```bash
-npm start
-```
-
-## Cient Side
-
-It is recommended to install `gulp-cli` globally, which helps initializing and previewing the website locally.
-
-Installation:
-
-```bash
-cd <project-root>/client
-npm install
-npm install --global gulp-cli
-```
-
-<br />Development run: `gulp`
-
-- to start serving the files in src directory.
-
-<br />Staging run: `gulp dist`
-
-- to build everything in dist directory.
-
-<br />Production run: `gulp build`
-
-- to build everything in build directory (with versioning).
-
-  \*Build version will increase when run this command
-  `client/src/assets/version/version.js`
+## Guide 
+- Resolution: 1920 x 1280 
+- 3D icons and illustration in IconScout 
+- All $tm machine animations are created in Photoshop 

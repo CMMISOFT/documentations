@@ -4,7 +4,7 @@ UI/UX Design in Adobe XD
 
 | Source | Link |
 | --- | --- |
-| <code>Working File</code> | <a href="hrms/isoft-app-mobile-20221007.xd.zip">hrms/isoft-app-mobile-20221007.xd.zip</a> |
+| <code>Working File</code> | <a href="hr-system/isoft-app-mobile-20221220.xd.zip">isoft-app-mobile-20221220.xd.zip</a> <br><a href="hr-system/animation-clockin.zip">animation-clockin.zip</a> <br><a href="hr-system/instructions-clock-in-out.fig.zip">instructions-clock-in-out.fig.zip</a> |
 | <code>Preview</code> | https://xd.adobe.com/view/9ad0fd45-62d9-4cb3-b1a6-2a07b35e7f38-cf83/ |
 
 ## Guide
