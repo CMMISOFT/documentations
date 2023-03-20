@@ -13,3 +13,5 @@ UI/UX Design in Figma
 - Resolution: 1920 x 1280 
 - 3D icons and illustration in IconScout 
 - All $tm machine animations are created in Photoshop 
+
+- Share link - https://help.figma.com/hc/en-us/articles/360040531773-Share-files-and-prototypes
