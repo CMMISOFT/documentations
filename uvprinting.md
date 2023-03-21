@@ -21,6 +21,9 @@ Step by Step
 2. RIIN
    - Print canva: 16Pass 4C 2bit textile
    - Safe size: 190×140mm (half A4)
+3. Tools unblur / remove bg of image
+   - https://picwish.com/unblur-image-portrait
+   - https://www.remove.bg/
 
 ## Print on Leaf
 
