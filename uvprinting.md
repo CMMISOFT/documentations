@@ -70,6 +70,11 @@ Step by Step
    <img src="uvprinting/img10.png" width="100%" style="display:block; max-width:600px;" />
    - 4 4 4 4 4
 
+
+## System User Manual
+
+- https://www.rainbow-inkjet.com/uploads/Manual-Book-of-Wellprint-Control-Software.pdf
+
 <style>
    p{
       margin:12px 0 0 !important;
